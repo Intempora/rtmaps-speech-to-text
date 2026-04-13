@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.13" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="4.9.0"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="PB_Microphone" Model="PythonBridge" Version="4.9.0" x="96" y="192" z="0">
+    <Output LongName="PB_Microphone.mic_out" Name="mic_out">
+      <Property LongName="PB_Microphone.mic_out.subsampling" Type="1">1</Property>
+      <Property LongName="PB_Microphone.mic_out.fifosize" Type="1">16</Property>
+      <Property LongName="PB_Microphone.mic_out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="PB_Microphone.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="PB_Microphone.internalInputs" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="PB_Microphone.internalOutputs" Type="3" SubType="128"><![CDATA[mic_out;12==;0]]></Property>
+    <Property LongName="PB_Microphone.internalProperties" Type="3" SubType="128"><![CDATA[verbose||23||0#record_timeout||11||2#phrase_timeout||11||0.05#output_buffer||8||441000]]></Property>
+    <ReadOnlyProperty LongName="PB_Microphone.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="PB_Microphone.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="PB_Microphone.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="PB_Microphone.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PB_Microphone.pythonPID" Type="1">31452</ReadOnlyProperty>
+    <Property LongName="PB_Microphone.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="PB_Microphone.useNuitka" Type="0">false</Property>
+    <Property LongName="PB_Microphone.loadingTimeout" Type="1">8000000</Property>
+    <Property LongName="PB_Microphone.alwaysReloadAtStart" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PB_Microphone.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_Microphone.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="PB_Microphone.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="PB_Microphone.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="PB_Microphone.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/teolo/Desktop/Intempora/Python/STT/rtmaps-speech-to-text/rt_microphone.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/rt_microphone.py]]></Relative></Property>
+    <Property LongName="PB_Microphone.readingPolicy" Type="4"><![CDATA[5|2|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="PB_Microphone.samplingPeriod" Type="1" SubType="1">300000</Property>
+    <Property LongName="PB_Microphone.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="PB_Microphone.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_Microphone.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="PB_Microphone.verbose" Type="0">false</Property>
+    <Property LongName="PB_Microphone.record_timeout" Type="2">2</Property>
+    <Property LongName="PB_Microphone.phrase_timeout" Type="2">0.05</Property>
+    <Property LongName="PB_Microphone.output_buffer" Type="1">441000</Property>
+    <Property LongName="PB_Microphone.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="PB_Microphone.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="PB_Microphone.threaded" Type="0">true</Property>
+    <Property LongName="PB_Microphone.priority" Type="1">128</Property>
+    <Property LongName="PB_Microphone.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="PB_STT" Model="PythonBridge" Version="4.9.0" x="408" y="192" z="0">
+    <Input LongName="PB_STT.audio_in" Name="audio_in">
+      <Property LongName="PB_STT.audio_in.readerType" Type="1">0</Property>
+      <Property LongName="PB_STT.audio_in.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="PB_STT.text_out" Name="text_out">
+      <Property LongName="PB_STT.text_out.subsampling" Type="1">1</Property>
+      <Property LongName="PB_STT.text_out.fifosize" Type="1">16</Property>
+      <Property LongName="PB_STT.text_out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="PB_STT.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="PB_STT.internalInputs" Type="3" SubType="128"><![CDATA[audio_in;0==]]></Property>
+    <Property LongName="PB_STT.internalOutputs" Type="3" SubType="128"><![CDATA[text_out;0==;0]]></Property>
+    <Property LongName="PB_STT.internalProperties" Type="3" SubType="128"><![CDATA[verbose||23||0#model_size||13||5|1|tiny|base|small|medium|large-v2||24#device||13||3|1|auto|cpu|cuda||24#compute_type||13||6|1|auto|int8|int8_floatt16|float16|int16|float32||24#threads||8||0#output_buffer||8||512]]></Property>
+    <ReadOnlyProperty LongName="PB_STT.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="PB_STT.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="PB_STT.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="PB_STT.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PB_STT.pythonPID" Type="1">33920</ReadOnlyProperty>
+    <Property LongName="PB_STT.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="PB_STT.useNuitka" Type="0">false</Property>
+    <Property LongName="PB_STT.loadingTimeout" Type="1">8000000</Property>
+    <Property LongName="PB_STT.alwaysReloadAtStart" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PB_STT.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_STT.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="PB_STT.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="PB_STT.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="PB_STT.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/teolo/Desktop/Intempora/Python/STT/rtmaps-speech-to-text/rt_faster_whisper.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/rt_faster_whisper.py]]></Relative></Property>
+    <Property LongName="PB_STT.readingPolicy" Type="4"><![CDATA[5|1|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="PB_STT.timeout" Type="1" SubType="1">-1</Property>
+    <Property LongName="PB_STT.inputsBehavior" Type="4"><![CDATA[2|1|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="PB_STT.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_STT.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="PB_STT.verbose" Type="0">false</Property>
+    <Property LongName="PB_STT.model_size" Type="4"><![CDATA[5|1|tiny|base|small|medium|large-v2]]></Property>
+    <Property LongName="PB_STT.device" Type="4"><![CDATA[3|1|auto|cpu|cuda]]></Property>
+    <Property LongName="PB_STT.compute_type" Type="4"><![CDATA[6|1|auto|int8|int8_floatt16|float16|int16|float32]]></Property>
+    <Property LongName="PB_STT.threads" Type="1">0</Property>
+    <Property LongName="PB_STT.output_buffer" Type="1">512</Property>
+    <Property LongName="PB_STT.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="PB_STT.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="PB_STT.threaded" Type="0">true</Property>
+    <Property LongName="PB_STT.priority" Type="1">128</Property>
+    <Property LongName="PB_STT.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="TextViewer_1" Model="TextViewer" Version="2.0.8" x="632" y="192" z="0">
+    <Input LongName="TextViewer_1.input" Name="input">
+      <Property LongName="TextViewer_1.input.readerType" Type="1">0</Property>
+      <Property LongName="TextViewer_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="TextViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="TextViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="TextViewer_1.run" Type="0">true</Property>
+    <Property LongName="TextViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="TextViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="TextViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="TextViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="TextViewer_1.x" Type="1">2133</Property>
+    <Property LongName="TextViewer_1.y" Type="1">115</Property>
+    <Property LongName="TextViewer_1.width" Type="1">696</Property>
+    <Property LongName="TextViewer_1.height" Type="1">482</Property>
+    <Property LongName="TextViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="TextViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="TextViewer_1.background_color" Type="1" SubType="4">0</Property>
+    <Property LongName="TextViewer_1.font_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="TextViewer_1.maximumBlockCount" Type="1">0</Property>
+    <Property LongName="TextViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="TextViewer_1.appendLineFeedForNewData" Type="0">true</Property>
+    <Property LongName="TextViewer_1.fontSize" Type="1">10</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="TextViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="TextViewer_1.priority" Type="1">128</Property>
+    <Property LongName="TextViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="PB_Microphone.mic_out" Input="PB_STT.audio_in"/>
+  <Connection Output="PB_STT.text_out" Input="TextViewer_1.input"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="PythonBridge_2_1" reversed="false">
+      <Description/>
+    </ComponentBox>
+    <ConnectionShape InstanceName="PB_STT.audio_in" color="0"/>
+    <ConnectionShape InstanceName="PythonBridge_1.in" color="0"/>
+    <ConnectionShape InstanceName="TextViewer_1.input" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>
