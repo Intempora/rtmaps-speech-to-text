@@ -1,0 +1,34 @@
+{
+	"intents": [  
+		{
+			"tag": "stop",
+			"patterns": ["stop", "immobile", "arrete", "on s'arrete"],
+			"responses": ["stop"]
+		},
+		{
+			"tag": "encore",
+			"patterns": ["encore", "again", "keep going", "continue"],
+			"responses": ["encore"]
+		},
+		{
+			"tag": "forward",
+			"patterns": ["forward", "faut que ça avance", "on se bouge", "move"],
+			"responses": ["forward"]
+		},
+		{
+			"tag": "left",
+			"patterns": ["left", "port", "gauche", "babord"],
+			"responses": ["left"]
+		},
+		{
+			"tag": "right",
+			"patterns": ["right", "starboard", "droite", "tribord"],
+			"responses": ["right"]
+		},
+		{
+			"tag": "back",
+			"patterns": ["back", "back up", "reverse", "recule"],
+			"responses": ["back"]
+		}
+	]
+}

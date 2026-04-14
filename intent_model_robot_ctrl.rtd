@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.13" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="4.9.0"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.1.1" x="760" y="328" z="0">
+    <Input LongName="DataViewer_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_1.input_1.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_1.x" Type="1">16</Property>
+    <Property LongName="DataViewer_1.y" Type="1">610</Property>
+    <Property LongName="DataViewer_1.width" Type="1">530</Property>
+    <Property LongName="DataViewer_1.height" Type="1">420</Property>
+    <Property LongName="DataViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
+    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[1|PythonBridge_2.twist;0|Info:PythonBridge_2.twist;1|Data:PythonBridge_2.twist;0|]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="PB_IntentModel" Model="PythonBridge" Version="4.9.0" x="432" y="328" z="0">
+    <Input LongName="PB_IntentModel.text" Name="text">
+      <Property LongName="PB_IntentModel.text.readerType" Type="1">0</Property>
+      <Property LongName="PB_IntentModel.text.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="PB_IntentModel.twist" Name="twist">
+      <Property LongName="PB_IntentModel.twist.subsampling" Type="1">1</Property>
+      <Property LongName="PB_IntentModel.twist.fifosize" Type="1">16</Property>
+      <Property LongName="PB_IntentModel.twist.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="PB_IntentModel.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="PB_IntentModel.internalInputs" Type="3" SubType="128"><![CDATA[text;1==]]></Property>
+    <Property LongName="PB_IntentModel.internalOutputs" Type="3" SubType="128"><![CDATA[twist;11==;0]]></Property>
+    <Property LongName="PB_IntentModel.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="PB_IntentModel.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="PB_IntentModel.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="PB_IntentModel.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="PB_IntentModel.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PB_IntentModel.pythonPID" Type="1">34944</ReadOnlyProperty>
+    <Property LongName="PB_IntentModel.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="PB_IntentModel.useNuitka" Type="0">false</Property>
+    <Property LongName="PB_IntentModel.loadingTimeout" Type="1">8000000</Property>
+    <Property LongName="PB_IntentModel.alwaysReloadAtStart" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PB_IntentModel.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_IntentModel.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="PB_IntentModel.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="PB_IntentModel.pythonExecutable" Type="3" SubType="16"><![CDATA[C:/Users/teolo/Desktop/Intempora/Python/LLM/venv-rt-llm/Scripts/python.exe]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/venv-rt-llm/Scripts/python.exe]]></Relative></Property>
+    <Property LongName="PB_IntentModel.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/teolo/Desktop/Intempora/Python/LLM/rt_intent_model_robot_ctrl.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/rt_intent_model_robot_ctrl.py]]></Relative></Property>
+    <Property LongName="PB_IntentModel.readingPolicy" Type="4"><![CDATA[5|1|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="PB_IntentModel.timeout" Type="1" SubType="1">-1</Property>
+    <Property LongName="PB_IntentModel.inputsBehavior" Type="4"><![CDATA[2|1|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="PB_IntentModel.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_IntentModel.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="PB_IntentModel.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="PB_IntentModel.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="PB_IntentModel.threaded" Type="0">true</Property>
+    <Property LongName="PB_IntentModel.priority" Type="1">128</Property>
+    <Property LongName="PB_IntentModel.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="PB_STT" Model="PythonBridge" Version="4.9.0" x="136" y="224" z="0">
+    <Output LongName="PB_STT.text_out" Name="text_out">
+      <Property LongName="PB_STT.text_out.subsampling" Type="1">1</Property>
+      <Property LongName="PB_STT.text_out.fifosize" Type="1">16</Property>
+      <Property LongName="PB_STT.text_out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="PB_STT.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="PB_STT.internalInputs" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="PB_STT.internalOutputs" Type="3" SubType="128"><![CDATA[text_out;0==;64]]></Property>
+    <Property LongName="PB_STT.internalProperties" Type="3" SubType="128"><![CDATA[verbose||23||1#model_size||13||5|4|tiny|base|small|medium|large-v2||24#device||13||3|2|auto|cpu|cuda||24#compute_type||13||6|1|auto|int8|int8_floatt16|float16|int16|float32||24#record_timeout||11||2#phrase_timeout||11||0.05#threads||8||0]]></Property>
+    <ReadOnlyProperty LongName="PB_STT.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="PB_STT.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="PB_STT.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="PB_STT.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PB_STT.pythonPID" Type="1">18460</ReadOnlyProperty>
+    <Property LongName="PB_STT.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="PB_STT.useNuitka" Type="0">false</Property>
+    <Property LongName="PB_STT.loadingTimeout" Type="1">8000000</Property>
+    <Property LongName="PB_STT.alwaysReloadAtStart" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PB_STT.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_STT.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="PB_STT.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="PB_STT.pythonExecutable" Type="3" SubType="16"><![CDATA[C:/Users/teolo/Desktop/Intempora/Python/LLM/venv-rt-llm/Scripts/python.exe]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/venv-rt-llm/Scripts/python.exe]]></Relative></Property>
+    <Property LongName="PB_STT.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/teolo/Desktop/Intempora/Python/LLM/rt_faster_whisper.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/rt_faster_whisper.py]]></Relative></Property>
+    <Property LongName="PB_STT.readingPolicy" Type="4"><![CDATA[5|2|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="PB_STT.samplingPeriod" Type="1" SubType="1">40000</Property>
+    <Property LongName="PB_STT.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="PB_STT.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_STT.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="PB_STT.verbose" Type="0">true</Property>
+    <Property LongName="PB_STT.model_size" Type="4"><![CDATA[5|4|tiny|base|small|medium|large-v2]]></Property>
+    <Property LongName="PB_STT.device" Type="4"><![CDATA[3|2|auto|cpu|cuda]]></Property>
+    <Property LongName="PB_STT.compute_type" Type="4"><![CDATA[6|1|auto|int8|int8_floatt16|float16|int16|float32]]></Property>
+    <Property LongName="PB_STT.record_timeout" Type="2">2</Property>
+    <Property LongName="PB_STT.phrase_timeout" Type="2">0.05</Property>
+    <Property LongName="PB_STT.threads" Type="1">0</Property>
+    <Property LongName="PB_STT.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="PB_STT.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="PB_STT.threaded" Type="0">true</Property>
+    <Property LongName="PB_STT.priority" Type="1">128</Property>
+    <Property LongName="PB_STT.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="TextViewer_1" Model="TextViewer" Version="2.0.8" x="760" y="224" z="0">
+    <Input LongName="TextViewer_1.input" Name="input">
+      <Property LongName="TextViewer_1.input.readerType" Type="1">0</Property>
+      <Property LongName="TextViewer_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="TextViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="TextViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="TextViewer_1.run" Type="0">true</Property>
+    <Property LongName="TextViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="TextViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="TextViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="TextViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="TextViewer_1.x" Type="1">552</Property>
+    <Property LongName="TextViewer_1.y" Type="1">730</Property>
+    <Property LongName="TextViewer_1.width" Type="1">400</Property>
+    <Property LongName="TextViewer_1.height" Type="1">300</Property>
+    <Property LongName="TextViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="TextViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="TextViewer_1.background_color" Type="1" SubType="4">0</Property>
+    <Property LongName="TextViewer_1.font_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="TextViewer_1.maximumBlockCount" Type="1">0</Property>
+    <Property LongName="TextViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="TextViewer_1.appendLineFeedForNewData" Type="0">true</Property>
+    <Property LongName="TextViewer_1.fontSize" Type="1">10</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="TextViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="TextViewer_1.priority" Type="1">128</Property>
+    <Property LongName="TextViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="PB_IntentModel.twist" Input="DataViewer_1.input_0"/>
+  <Connection Output="PB_STT.text_out" Input="PB_IntentModel.text"/>
+  <Connection Output="PB_STT.text_out" Input="TextViewer_1.input"/>
+  <RTBoardView ID="JavaStudio1.0">
+    <CommentBox x="54" y="87" z="-1" w="219" h="350" align="2" bgcolor="ff8040" fgcolor="0">STT&#13;
+ &#13;
+GPU &amp; CPU mode available&#13;
+&#13;
+fastwhisper python bridge wrapper&#13;
+</CommentBox>
+    <CommentBox x="292" y="88" z="-1" w="339" h="349" align="2" bgcolor="ff00" fgcolor="0">Intent Model&#13;
+&#13;
+CPU ONLY&#13;
+&#13;
+Parse input text with intent model to find orders to give to a robot &#13;
+The model can return the following orders from natural language :&#13;
+&#13;
+"stop" - "forward" - "left" -"right" - "back" - "encore"&#13;
+  </CommentBox>
+    <CommentBox x="647" y="88" z="-1" w="320" h="350" align="2" bgcolor="ffff" fgcolor="0">Debug viewers</CommentBox>
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="PB_IntentModel.text" color="0"/>
+    <ConnectionShape InstanceName="PythonBridge_1.in" color="0"/>
+    <ConnectionShape InstanceName="TextViewer_1.input" color="0"/>
+  </RTBoardView>
+</RTMapsDiagram>
