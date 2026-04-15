@@ -15,4 +15,9 @@ Set the python bridge property "Python executable" to use your venv python execu
 ```
 PB_STT.pythonExecutable = <<venv-stt\Scripts\python.exe>>
 ```
- 
+
+## Update intents
+You can modify the intents.json to add/remove understood orders.
+If you do so, you need to retrain the model before running the diagram again.
+Right click on the python bridge and select retrain model.
+This may take a while.
