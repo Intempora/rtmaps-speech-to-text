@@ -25,7 +25,7 @@
   <ClocksManagement>
     <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
   </ClocksManagement>
-  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.1.1" x="760" y="328" z="0">
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.1.1" x="872" y="328" z="0">
     <Input LongName="DataViewer_1.input_0" Name="input_0">
       <Property LongName="DataViewer_1.input_0.readerType" Type="1">4</Property>
       <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
@@ -72,7 +72,7 @@
     <Property LongName="DataViewer_1.priority" Type="1">128</Property>
     <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="PB_IntentModel" Model="PythonBridge" Version="4.9.0" x="432" y="328" z="0">
+  <Component InstanceName="PB_IntentModel" Model="PythonBridge" Version="4.9.0" x="544" y="328" z="0">
     <Input LongName="PB_IntentModel.text" Name="text">
       <Property LongName="PB_IntentModel.text.readerType" Type="1">0</Property>
       <Property LongName="PB_IntentModel.text.subsampling" Type="1">1</Property>
@@ -90,7 +90,7 @@
     <Property LongName="PB_IntentModel.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
     <Property LongName="PB_IntentModel.capturePythonPrint" Type="0">true</Property>
     <Property LongName="PB_IntentModel.useTCPOnly" Type="0">false</Property>
-    <ReadOnlyProperty LongName="PB_IntentModel.pythonPID" Type="1">34944</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_IntentModel.pythonPID" Type="1">1472</ReadOnlyProperty>
     <Property LongName="PB_IntentModel.FileSHMSize" Type="1">15000000</Property>
     <Property LongName="PB_IntentModel.useNuitka" Type="0">false</Property>
     <Property LongName="PB_IntentModel.loadingTimeout" Type="1">8000000</Property>
@@ -111,21 +111,63 @@
     <Property LongName="PB_IntentModel.priority" Type="1">128</Property>
     <Property LongName="PB_IntentModel.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="PB_STT" Model="PythonBridge" Version="4.9.0" x="136" y="224" z="0">
+  <Component InstanceName="PB_Mic" Model="PythonBridge" Version="4.9.0" x="56" y="224" z="0">
+    <Output LongName="PB_Mic.mic_out" Name="mic_out">
+      <Property LongName="PB_Mic.mic_out.subsampling" Type="1">1</Property>
+      <Property LongName="PB_Mic.mic_out.fifosize" Type="1">16</Property>
+      <Property LongName="PB_Mic.mic_out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="PB_Mic.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="PB_Mic.internalInputs" Type="3" SubType="128"><![CDATA[]]></Property>
+    <Property LongName="PB_Mic.internalOutputs" Type="3" SubType="128"><![CDATA[mic_out;12==;0]]></Property>
+    <Property LongName="PB_Mic.internalProperties" Type="3" SubType="128"><![CDATA[verbose||23||0#record_timeout||11||2#output_buffer||8||441000]]></Property>
+    <ReadOnlyProperty LongName="PB_Mic.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="PB_Mic.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="PB_Mic.capturePythonPrint" Type="0">true</Property>
+    <Property LongName="PB_Mic.useTCPOnly" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PB_Mic.pythonPID" Type="1">34244</ReadOnlyProperty>
+    <Property LongName="PB_Mic.FileSHMSize" Type="1">15000000</Property>
+    <Property LongName="PB_Mic.useNuitka" Type="0">false</Property>
+    <Property LongName="PB_Mic.loadingTimeout" Type="1">8000000</Property>
+    <Property LongName="PB_Mic.alwaysReloadAtStart" Type="0">false</Property>
+    <ReadOnlyProperty LongName="PB_Mic.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_Mic.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="PB_Mic.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="PB_Mic.pythonExecutable" Type="3" SubType="16"><![CDATA[]]></Property>
+    <Property LongName="PB_Mic.pythonFilename" Type="3" SubType="80"><![CDATA[C:\Users\teolo\Desktop\Intempora\Python\LLM\rt_microphone.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/rt_microphone.py]]></Relative></Property>
+    <Property LongName="PB_Mic.readingPolicy" Type="4"><![CDATA[5|2|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="PB_Mic.samplingPeriod" Type="1" SubType="1">40000</Property>
+    <Property LongName="PB_Mic.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
+    <ReadOnlyProperty LongName="PB_Mic.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_Mic.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="PB_Mic.verbose" Type="0">false</Property>
+    <Property LongName="PB_Mic.record_timeout" Type="2">2</Property>
+    <Property LongName="PB_Mic.output_buffer" Type="1">441000</Property>
+    <Property LongName="PB_Mic.guard_end" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="PB_Mic.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="PB_Mic.threaded" Type="0">true</Property>
+    <Property LongName="PB_Mic.priority" Type="1">128</Property>
+    <Property LongName="PB_Mic.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="PB_STT" Model="PythonBridge" Version="4.9.0" x="248" y="224" z="0">
+    <Input LongName="PB_STT.audio_in" Name="audio_in">
+      <Property LongName="PB_STT.audio_in.readerType" Type="1">0</Property>
+      <Property LongName="PB_STT.audio_in.subsampling" Type="1">1</Property>
+    </Input>
     <Output LongName="PB_STT.text_out" Name="text_out">
       <Property LongName="PB_STT.text_out.subsampling" Type="1">1</Property>
       <Property LongName="PB_STT.text_out.fifosize" Type="1">16</Property>
       <Property LongName="PB_STT.text_out.periodic" Type="0">false</Property>
     </Output>
     <Property LongName="PB_STT.guard_begin" Type="0" SubType="128">true</Property>
-    <Property LongName="PB_STT.internalInputs" Type="3" SubType="128"><![CDATA[]]></Property>
-    <Property LongName="PB_STT.internalOutputs" Type="3" SubType="128"><![CDATA[text_out;0==;64]]></Property>
-    <Property LongName="PB_STT.internalProperties" Type="3" SubType="128"><![CDATA[verbose||23||1#model_size||13||5|4|tiny|base|small|medium|large-v2||24#device||13||3|2|auto|cpu|cuda||24#compute_type||13||6|1|auto|int8|int8_floatt16|float16|int16|float32||24#record_timeout||11||2#phrase_timeout||11||0.05#threads||8||0]]></Property>
+    <Property LongName="PB_STT.internalInputs" Type="3" SubType="128"><![CDATA[audio_in;0==]]></Property>
+    <Property LongName="PB_STT.internalOutputs" Type="3" SubType="128"><![CDATA[text_out;0==;0]]></Property>
+    <Property LongName="PB_STT.internalProperties" Type="3" SubType="128"><![CDATA[verbose||23||1#phrase_timeout||8||10000#model_size||13||5|4|tiny|base|small|medium|large-v2||24#device||13||3|2|auto|cpu|cuda||24#compute_type||13||6|0|auto|int8|int8_floatt16|float16|int16|float32||24#threads||8||0#output_buffer||8||512]]></Property>
     <ReadOnlyProperty LongName="PB_STT.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
     <Property LongName="PB_STT.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
     <Property LongName="PB_STT.capturePythonPrint" Type="0">true</Property>
     <Property LongName="PB_STT.useTCPOnly" Type="0">false</Property>
-    <ReadOnlyProperty LongName="PB_STT.pythonPID" Type="1">18460</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="PB_STT.pythonPID" Type="1">27456</ReadOnlyProperty>
     <Property LongName="PB_STT.FileSHMSize" Type="1">15000000</Property>
     <Property LongName="PB_STT.useNuitka" Type="0">false</Property>
     <Property LongName="PB_STT.loadingTimeout" Type="1">8000000</Property>
@@ -135,25 +177,25 @@
     <Property LongName="PB_STT.className" Type="3"><![CDATA[rtmaps_python]]></Property>
     <Property LongName="PB_STT.pythonExecutable" Type="3" SubType="16"><![CDATA[C:/Users/teolo/Desktop/Intempora/Python/LLM/venv-rt-llm/Scripts/python.exe]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/venv-rt-llm/Scripts/python.exe]]></Relative></Property>
     <Property LongName="PB_STT.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/teolo/Desktop/Intempora/Python/LLM/rt_faster_whisper.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/rt_faster_whisper.py]]></Relative></Property>
-    <Property LongName="PB_STT.readingPolicy" Type="4"><![CDATA[5|2|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
-    <Property LongName="PB_STT.samplingPeriod" Type="1" SubType="1">40000</Property>
+    <Property LongName="PB_STT.readingPolicy" Type="4"><![CDATA[5|1|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling Based on Timestamps]]></Property>
+    <Property LongName="PB_STT.timeout" Type="1" SubType="1">-1</Property>
     <Property LongName="PB_STT.inputsBehavior" Type="4"><![CDATA[2|0|AllowEmptyInputs|Wait4AllInputs]]></Property>
     <ReadOnlyProperty LongName="PB_STT.basic_end_configuration" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="PB_STT.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
     <Property LongName="PB_STT.verbose" Type="0">true</Property>
+    <Property LongName="PB_STT.phrase_timeout" Type="1">10000</Property>
     <Property LongName="PB_STT.model_size" Type="4"><![CDATA[5|4|tiny|base|small|medium|large-v2]]></Property>
     <Property LongName="PB_STT.device" Type="4"><![CDATA[3|2|auto|cpu|cuda]]></Property>
-    <Property LongName="PB_STT.compute_type" Type="4"><![CDATA[6|1|auto|int8|int8_floatt16|float16|int16|float32]]></Property>
-    <Property LongName="PB_STT.record_timeout" Type="2">2</Property>
-    <Property LongName="PB_STT.phrase_timeout" Type="2">0.05</Property>
+    <Property LongName="PB_STT.compute_type" Type="4"><![CDATA[6|0|auto|int8|int8_floatt16|float16|int16|float32]]></Property>
     <Property LongName="PB_STT.threads" Type="1">0</Property>
+    <Property LongName="PB_STT.output_buffer" Type="1">512</Property>
     <Property LongName="PB_STT.guard_end" Type="0" SubType="128">true</Property>
     <ReadOnlyProperty LongName="PB_STT.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="PB_STT.threaded" Type="0">true</Property>
     <Property LongName="PB_STT.priority" Type="1">128</Property>
     <Property LongName="PB_STT.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="TextViewer_1" Model="TextViewer" Version="2.0.8" x="760" y="224" z="0">
+  <Component InstanceName="TextViewer_1" Model="TextViewer" Version="2.0.8" x="872" y="224" z="0">
     <Input LongName="TextViewer_1.input" Name="input">
       <Property LongName="TextViewer_1.input.readerType" Type="1">0</Property>
       <Property LongName="TextViewer_1.input.subsampling" Type="1">1</Property>
@@ -186,15 +228,16 @@
   </Component>
   <Connection Output="PB_IntentModel.twist" Input="DataViewer_1.input_0"/>
   <Connection Output="PB_STT.text_out" Input="PB_IntentModel.text"/>
+  <Connection Output="PB_Mic.mic_out" Input="PB_STT.audio_in"/>
   <Connection Output="PB_STT.text_out" Input="TextViewer_1.input"/>
   <RTBoardView ID="JavaStudio1.0">
-    <CommentBox x="54" y="87" z="-1" w="219" h="350" align="2" bgcolor="ff8040" fgcolor="0">STT&#13;
+    <CommentBox x="23" y="87" z="-1" w="361" h="350" align="2" bgcolor="ff8040" fgcolor="0">STT&#13;
  &#13;
 GPU &amp; CPU mode available&#13;
 &#13;
 fastwhisper python bridge wrapper&#13;
 </CommentBox>
-    <CommentBox x="292" y="88" z="-1" w="339" h="349" align="2" bgcolor="ff00" fgcolor="0">Intent Model&#13;
+    <CommentBox x="403" y="88" z="-1" w="339" h="349" align="2" bgcolor="ff00" fgcolor="0">Intent Model&#13;
 &#13;
 CPU ONLY&#13;
 &#13;
@@ -203,9 +246,10 @@ The model can return the following orders from natural language :&#13;
 &#13;
 "stop" - "forward" - "left" -"right" - "back" - "encore"&#13;
   </CommentBox>
-    <CommentBox x="647" y="88" z="-1" w="320" h="350" align="2" bgcolor="ffff" fgcolor="0">Debug viewers</CommentBox>
+    <CommentBox x="758" y="88" z="-1" w="320" h="350" align="2" bgcolor="ffff" fgcolor="0">Debug viewers</CommentBox>
     <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
     <ConnectionShape InstanceName="PB_IntentModel.text" color="0"/>
+    <ConnectionShape InstanceName="PB_STT.audio_in" color="0"/>
     <ConnectionShape InstanceName="PythonBridge_1.in" color="0"/>
     <ConnectionShape InstanceName="TextViewer_1.input" color="0"/>
   </RTBoardView>
