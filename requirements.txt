@@ -1,0 +1,6 @@
+
+pip install pyaudio
+pip install faster_whisper
+pip install SpeechRecognition 
+
+pip install torch 
